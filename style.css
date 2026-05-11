@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Playwrite_GB_S';
+    src: url(Playwrite_GB_S/PlaywriteGBS-Italic-VariableFont_wght.ttf) format('truetype'); /* Ajusta o caminho e a extensão se necessário */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +13,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Playwrite_GB_S', Arial, Helvetica, sans-serif;
     background-color: #F5EFE6;
     color: #5C4033;
     line-height: 1.6;
@@ -43,18 +51,36 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 10%;
-    gap: 40px;
+    padding: 60px 20%;
+    gap: 60px;
+}
+.hero-content {
+    flex: 1;          /* Faz o texto ocupar todo o espaço disponível à esquerda */
+    text-align: left; /* Garante que o texto está alinhado à esquerda */
 }
 
 .hero img {
-    width: 250px;
+    width: 450px;
+    max-width: 100%;
     border-radius: 20px;
+    object-fit: cover;
+}
+
+.galeria-secundaria {
+    display: flex;
+    justify-content: flex-start; /* Alinha as 3 fotos à esquerda, abaixo do texto */
+    gap: 20px;
+}
+
+.galeria-secundaria img {
+    width: 150px;
+    border-radius: 10px;
+    opacity: 0.7;
 }
 
 .skills,
 .pagina {
-    padding: 60px 10%;
+    padding: 40px 10%;
 }
 
 #lista-habilidades {

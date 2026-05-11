@@ -1,10 +1,10 @@
 const habilidades = [
-    "HTML Semântico",
-    "CSS Responsivo",
-    "JavaScript",
+    "Boa Comunicação",
+    "Criação web HTML/CSS/JavaScript",
+    "Criação conteúdo WEB",
     "Design Criativo",
     "Trabalho em Equipa",
-    "Comunicação"
+    
 ];
 
 const lista = document.getElementById("lista-habilidades");
