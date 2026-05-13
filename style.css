@@ -104,6 +104,42 @@ nav a:hover {
     width: 45%;                   /* Define que cada imagem ocupe aproximadamente metade */
 }
 
+.container-botao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-basis: 100%;    /* Força o bloco a ocupar uma linha inteira sozinho */
+    margin-top: 30px;
+}
+
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #B85C38;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-download:hover {
+    background-color: #9E4A2B;
+    transform: translateY(-2px);
+}
+
+.btn-download:active {
+    transform: translateY(0);
+}
+
+
+
+
+
 .card {
     background-color: white;
     padding: 20px;
